@@ -1,0 +1,13 @@
+1.0	wife	husband_v
+1.0	husband	wife_v
+1.0	father	husband	mother
+1.0	father	husband	daughter_v
+1.0	uncle	husband	aunt
+1.0	uncle	husband	niece_v
+1.0	aunt	sister	mother
+1.0	son	son	husband
+1.0	daughter	daughter	husband
+1.0	son	brother	daughter
+1.0	daughter	sister	daughter
+1.0	sister	sister	sister
+1.0	sister	daughter	mother
