@@ -2,6 +2,7 @@
 
 ## To test Uniker:
 from: https://github.com/vivian1993/UniKER
+
 Go inside Uniker repository
 
 On family_small with normal ontology:
@@ -37,6 +38,7 @@ python3 run.py fb15k -1 family_fb15k_model TransE 8 0.0 0.2
 
 ### To test KALE:
 from: https://github.com/iieir-km/KALE
+
 Go inside KALE repository
 
   - On family_small with normal ontology:
