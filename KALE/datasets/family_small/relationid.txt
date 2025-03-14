@@ -1,0 +1,12 @@
+0	mother
+1	niece
+2	son
+3	wife
+4	father
+5	aunt
+6	uncle
+7	nephew
+8	husband
+9	daughter
+10	brother
+11	sister
