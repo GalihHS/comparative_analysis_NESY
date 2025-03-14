@@ -1,1 +1,102 @@
 # comparative_analysis_NESY
+
+## To test Uniker:
+from: https://github.com/vivian1993/UniKER
+
+On family_small with normal ontology:
+```
+python3 run.py family_small -1 family_small_model TransE 8 0.0 0.2
+```
+
+On family_small with less rules:
+- rename data/family_small/MLN_rule.txt to data/family_small/normal_rules.txt (or less_rules.txt) - and - rename data/family_small/less_rules.txt to data/family_small/MLN_rule.txt
+- rename data/family_small/train_sat.txt to data/family_small/train_sat_normal.txt - and - rename data/family_small/train_sat_less.txt to data/family_small/train_sat.txt
+```
+python3 run.py family_small -1 family_small_model TransE 8 0.0 0.2
+```
+
+On family_small with wrong rules:
+- rename data/family_small/MLN_rule.txt to data/family_small/normal_rules.txt (or less_rules.txt) - and - rename data/family_small/wrong_rules.txt to data/family_small/MLN_rule.txt
+- rename data/family_small/train_sat.txt to data/family_small/train_sat_less.txt - and - rename data/family_small/train_sat_normal.txt to data/family_small/train_sat.txt
+```
+python3 run.py family_small -1 family_small_model TransE 8 0.0 0.2
+```
+
+On family_medium:
+```
+python3 run.py family_medium -1 family_medium_model TransE 8 0.0 0.2
+```
+
+On FB15k-237:
+```
+python3 run.py fb15k -1 family_fb15k_model TransE 8 0.0 0.2
+```
+
+
+
+### To test KALE:
+from: https://github.com/iieir-km/KALE
+
+  - On family_small with normal ontology:
+To train:
+```
+java -jar KALE.jar -train datasets/family_small/train.txt -valid datasets/family_small/valid.txt -test datasets/family_small/test.txt -rule datasets/family_small/groundings.txt -m 12 -n 2411 -w 0.1 -k 80 -d 0.3 -ge 0.1 -gr 0.1 -# 1500 -skip 50
+```
+To test:
+```
+java -cp src test.Eval_LinkPrediction 2411 12 80 MatrixE-k80-d0,3-ge0,1-gr0,1-w0,1.best MatrixR-k80-d0,3-ge0,1-gr0,1-w0,1.best datasets/family_small/train.txt datasets/family_small/valid.txt datasets/family_small/test.txt datasets/family_small/train_sat.txt
+```
+
+
+  - On family_small with less rules:
+To train:
+```
+java -jar KALE.jar -train datasets/family_small/train.txt -valid datasets/family_small/valid.txt -test datasets/family_small/test.txt -rule datasets/family_small/groundings_less.txt -m 12 -n 2411 -w 0.1 -k 80 -d 0.3 -ge 0.1 -gr 0.1 -# 1500 -skip 50
+```
+To test:
+```
+java -cp src test.Eval_LinkPrediction 2411 12 80 MatrixE-k80-d0,3-ge0,1-gr0,1-w0,1.best MatrixR-k80-d0,3-ge0,1-gr0,1-w0,1.best datasets/family_small/train.txt datasets/family_small/valid.txt datasets/family_small/test.txt datasets/family_small/train_sat_less.txt
+```
+
+
+
+
+  - On family_small with wrong rules:
+To train:
+```
+java -jar KALE.jar -train datasets/family_small/train.txt -valid datasets/family_small/valid.txt -test datasets/family_small/test.txt -rule datasets/family_small/groundings_wrong.txt -m 12 -n 2411 -w 0.1 -k 80 -d 0.3 -ge 0.1 -gr 0.1 -# 1500 -skip 50
+```
+To test:
+```
+java -cp src test.Eval_LinkPrediction 2411 12 80 MatrixE-k80-d0,3-ge0,1-gr0,1-w0,1.best MatrixR-k80-d0,3-ge0,1-gr0,1-w0,1.best datasets/family_small/train.txt datasets/family_small/valid.txt datasets/family_small/test.txt datasets/family_small/train_sat.txt
+```
+
+
+
+
+On family_medium:
+To train:
+```
+java -jar KALE.jar -train datasets/family_medium/train.txt -valid datasets/family_medium/valid.txt -test datasets/family_medium/test.txt -rule datasets/family_medium/groundings.txt -m 12 -n 2968 -w 0.1 -k 80 -d 0.3 -ge 0.1 -gr 0.1 -# 1500 -skip 50
+```
+To test:
+```
+java -cp src test.Eval_LinkPrediction 2968 12 80 MatrixE-k80-d0,3-ge0,1-gr0,1-w0,1.best MatrixR-k80-d0,3-ge0,1-gr0,1-w0,1.best datasets/family_medium/train.txt datasets/family_medium/valid.txt datasets/family_medium/test.txt datasets/family_medium/train_sat.txt
+```
+
+
+
+
+  - On FB15k-237:
+first to create groundings.txt: 
+```
+java -cp src basic.dataProcess.GroundAllRules fb15k
+```
+To train (-Xmx32g and -Xms8g are optionnal):
+```
+java -Xmx32g -Xms8g -jar KALE.jar -train datasets/fb15k/train.txt -valid datasets/fb15k/valid.txt -test datasets/fb15k/test.txt -rule datasets/fb15k/groundings.txt -m 237 -n 14505 -w 0.1 -k 120 -d 0.3 -ge 0.1 -gr 0.1 -# 2000 -skip 50
+```
+To test:
+```
+java -cp src test.Eval_LinkPrediction 14505 237 120 MatrixE-k120-d0,3-ge0,1-gr0,1-w0,1.best MatrixR-k120-d0,3-ge0,1-gr0,1-w0,1.best datasets/fb15k/train.txt datasets/fb15k/valid.txt datasets/fb15k/test.txt none
+```
