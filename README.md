@@ -2,6 +2,7 @@
 
 ## To test Uniker:
 from: https://github.com/vivian1993/UniKER
+Go inside Uniker repository
 
 On family_small with normal ontology:
 ```
@@ -36,8 +37,10 @@ python3 run.py fb15k -1 family_fb15k_model TransE 8 0.0 0.2
 
 ### To test KALE:
 from: https://github.com/iieir-km/KALE
+Go inside KALE repository
 
   - On family_small with normal ontology:
+
 To train:
 ```
 java -jar KALE.jar -train datasets/family_small/train.txt -valid datasets/family_small/valid.txt -test datasets/family_small/test.txt -rule datasets/family_small/groundings.txt -m 12 -n 2411 -w 0.1 -k 80 -d 0.3 -ge 0.1 -gr 0.1 -# 1500 -skip 50
@@ -49,6 +52,7 @@ java -cp src test.Eval_LinkPrediction 2411 12 80 MatrixE-k80-d0,3-ge0,1-gr0,1-w0
 
 
   - On family_small with less rules:
+
 To train:
 ```
 java -jar KALE.jar -train datasets/family_small/train.txt -valid datasets/family_small/valid.txt -test datasets/family_small/test.txt -rule datasets/family_small/groundings_less.txt -m 12 -n 2411 -w 0.1 -k 80 -d 0.3 -ge 0.1 -gr 0.1 -# 1500 -skip 50
@@ -62,6 +66,7 @@ java -cp src test.Eval_LinkPrediction 2411 12 80 MatrixE-k80-d0,3-ge0,1-gr0,1-w0
 
 
   - On family_small with wrong rules:
+
 To train:
 ```
 java -jar KALE.jar -train datasets/family_small/train.txt -valid datasets/family_small/valid.txt -test datasets/family_small/test.txt -rule datasets/family_small/groundings_wrong.txt -m 12 -n 2411 -w 0.1 -k 80 -d 0.3 -ge 0.1 -gr 0.1 -# 1500 -skip 50
@@ -74,7 +79,8 @@ java -cp src test.Eval_LinkPrediction 2411 12 80 MatrixE-k80-d0,3-ge0,1-gr0,1-w0
 
 
 
-On family_medium:
+  - On family_medium:
+
 To train:
 ```
 java -jar KALE.jar -train datasets/family_medium/train.txt -valid datasets/family_medium/valid.txt -test datasets/family_medium/test.txt -rule datasets/family_medium/groundings.txt -m 12 -n 2968 -w 0.1 -k 80 -d 0.3 -ge 0.1 -gr 0.1 -# 1500 -skip 50
@@ -88,6 +94,7 @@ java -cp src test.Eval_LinkPrediction 2968 12 80 MatrixE-k80-d0,3-ge0,1-gr0,1-w0
 
 
   - On FB15k-237:
+
 first to create groundings.txt: 
 ```
 java -cp src basic.dataProcess.GroundAllRules fb15k
