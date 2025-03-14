@@ -96,8 +96,9 @@ java -cp src test.Eval_LinkPrediction 2968 12 80 MatrixE-k80-d0,3-ge0,1-gr0,1-w0
 
 
   - On FB15k-237:
+First unzip the fb15k.zip file
 
-first to create groundings.txt: 
+Then create groundings.txt: 
 ```
 java -cp src basic.dataProcess.GroundAllRules fb15k
 ```
