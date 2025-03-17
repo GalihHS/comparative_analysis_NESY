@@ -111,3 +111,43 @@ To test:
 ```
 java -cp src test.Eval_LinkPrediction 14505 237 120 MatrixE-k120-d0,3-ge0,1-gr0,1-w0,1.best MatrixR-k120-d0,3-ge0,1-gr0,1-w0,1.best datasets/fb15k/train.txt datasets/fb15k/valid.txt datasets/fb15k/test.txt none
 ```
+
+
+
+
+
+
+## To test ExpressGNN:
+from: https://github.com/expressGNN/ExpressGNN
+
+Go inside ExpressGNN repository
+
+On family_small with normal ontology:
+```
+python3 -m main.train -data_root data/family_small -rule_filename rules.txt -slice_dim 16 -batchsize 16 -embedding_size 256 -gcn_free_size 255 -load_method 1 -exp_folder exp -exp_name family_small
+```
+
+On family_small with less rules:
+```
+python3 -m main.train -data_root data/family_small -rule_filename less_rules.txt -slice_dim 16 -batchsize 16 -embedding_size 256 -gcn_free_size 255 -load_method 1 -exp_folder exp -exp_name family_small
+```
+
+On family_small with wrong rules:
+```
+python3 -m main.train -data_root data/family_small -rule_filename wrong_rules.txt -slice_dim 16 -batchsize 16 -embedding_size 256 -gcn_free_size 255 -load_method 1 -exp_folder exp -exp_name family_small
+```
+
+On family_medium:
+```
+python3 -m main.train -data_root data/family_medium -rule_filename rules.txt -slice_dim 16 -batchsize 16 -embedding_size 256 -gcn_free_size 255 -load_method 1 -exp_folder exp -exp_name family_medium 
+```
+
+On FB15k-237:
+```
+python3 -m main.train -data_root data/fb15k-237 -rule_filename cleaned_rules_weight_larger_than_0.9.txt -slice_dim 16 -batchsize 16 -use_gcn 1 -num_hops 1 -embedding_size 128 -gcn_free_size 127 -patience 20 -lr_decay_patience 100 -entropy_temp 1 -load_method 1 -exp_folder exp -exp_name freebase
+```
+
+
+
+
+
