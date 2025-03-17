@@ -151,3 +151,32 @@ python3 -m main.train -data_root data/fb15k-237 -rule_filename cleaned_rules_wei
 
 
 
+
+## To test sub-symbolic algorithms (TransE, RotatE, BoxE):
+see pykeen documentation (https://pykeen.readthedocs.io/en/stable/)
+
+Go inside sub_symbolics repository
+
+On family_small:
+```
+python KGE_family.py conf_kge.json family_small
+```
+
+On family_medium:
+```
+python KGE_family.py conf_kge.json family_medium
+```
+
+On FB15k-237:
+```
+python KGE_family.py conf_kge.json FB15k-237
+```
+
+
+
+
+
+
+
+
+
