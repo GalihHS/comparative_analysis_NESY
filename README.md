@@ -180,3 +180,60 @@ python KGE_family.py conf_kge.json FB15k-237
 
 
 
+## To test the symbolic algorithm (DLV):
+see DLV documentation (https://www.dlvsystem.it/dlvsite/dlv-user-manual/)
+
+Go inside DLV repository
+
+On family_small with normal ontology:
+
+To generate the saturated file:
+```
+./run.sh family_small/train.txt family_small/rules.txt family_small/train_sat.txt
+```
+To evaluate it:
+```
+python compute_metrics.py family_small/test.txt family_small/train_sat.txt
+```
+
+
+On family_small with less rules:
+
+To generate the saturated file:
+```
+./run.sh family_small/train.txt family_small/less_rules.txt family_small/train_sat_less_rules.txt
+```
+To evaluate it:
+```
+python compute_metrics.py test_small.txt family_small/train_sat_less_rules.txt
+```
+
+
+On family_small with wrong rules --> timeout:
+```
+./run.sh family_small/train.txt family_small/wrong_rules.txt family_small/train_sat_wrong_rules.txt
+```
+
+
+On family_medium:
+
+To generate the saturated file:
+```
+./run.sh family_medium/train.txt family_medium/rules.txt family_medium/train_sat.txt
+```
+To evaluate it:
+```
+python compute_metrics.py family_medium/test.txt family_medium/train_sat.txt
+```
+
+
+On FB15k-237 --> timeout:
+```
+./run.sh fb15k-237/train.txt fb15k-237/rules.txt fb15k-237/train_sat.txt
+```
+
+
+
+
+
+
