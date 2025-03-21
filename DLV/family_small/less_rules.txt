@@ -1,0 +1,14 @@
+wife(X,Y) :- husband(Y,X).
+husband(X,Y) :- wife(Y,X).
+father(X,Z) :- husband(X,Y), mother(Y,Z).
+father(X,Z) :- husband(X,Y), daughter(Z,Y).
+uncle(X,Z) :- husband(X,Y), aunt(Y,Z).
+uncle(X,Z) :- husband(X,Y), niece(Z,Y).
+aunt(X,Z) :- sister(X,Y), mother(Y,Z).
+son(X,Z) :- son(X,Y), husband(Y,Z).
+daughter(X,Z) :- daughter(X,Y), husband(Y,Z).
+son(X,Z) :- brother(X,Y), daughter(Y,Z).
+daughter(X,Z) :- sister(X,Y), daughter(Y,Z).
+sister(X,Z) :- sister(X,Y), sister(Y,Z), X != Z.
+sister(X,Z) :- daughter(X,Y), mother(Y,Z), X != Z.
+
