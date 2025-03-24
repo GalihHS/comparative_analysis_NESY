@@ -1,0 +1,509 @@
+rel_180(X,Z) :- rel_180(X,Y), rel_180(Y,Z).
+rel_180(X,Z) :- rel_144(Y,X), rel_144(Z,Y).
+rel_96(X,Z) :- rel_80(X,Y), rel_80(Y,Z).
+rel_96(X,Z) :- rel_15(X,Y), rel_15(Y,Z).
+rel_132(X,Z) :- rel_10(X,Y), rel_10(Y,Z).
+rel_132(X,Z) :- rel_221(Y,X), rel_221(Z,Y).
+rel_108(X,Z) :- rel_125(Y,X), rel_125(Z,Y).
+rel_108(X,Y) :- rel_66(X,Y).
+rel_10(X,Z) :- rel_10(X,Y), rel_10(Y,Z).
+rel_10(X,Z) :- rel_11(Y,X), rel_46(Z,Y).
+rel_80(X,Z) :- rel_96(X,Y), rel_96(Y,Z).
+rel_80(X,Z) :- rel_129(Y,X), rel_179(Z,Y).
+rel_80(X,Y) :- rel_179(Y,X).
+rel_179(X,Z) :- rel_129(X,Y), rel_129(Y,Z).
+rel_179(X,Y) :- rel_11(Y,X).
+rel_129(X,Z) :- rel_129(X,Y), rel_129(Y,Z).
+rel_129(X,Z) :- rel_21(Y,X), rel_21(Z,Y).
+rel_45(X,Z) :- rel_86(X,Y), rel_45(Z,Y).
+rel_45(X,Y) :- rel_45(X,Y).
+rel_125(X,Y) :- rel_106(X,Y).
+rel_125(X,Z) :- rel_132(Y,X), rel_132(Z,Y).
+rel_215(X,Z) :- rel_9(X,Y), rel_215(Z,Y).
+rel_215(X,Z) :- rel_215(Y,X), rel_120(Y,Z).
+rel_9(X,Y) :- rel_45(X,Y).
+rel_9(X,Z) :- rel_9(X,Y), rel_63(Z,Y).
+rel_11(X,Z) :- rel_21(Y,X), rel_11(Z,Y).
+rel_11(X,Z) :- rel_11(X,Y), rel_10(Y,Z).
+rel_11(X,Z) :- rel_11(Y,X), rel_10(Y,Z).
+rel_155(X,Y) :- rel_21(X,Y).
+rel_155(X,Z) :- rel_20(Y,X), rel_10(Z,Y).
+rel_21(X,Z) :- rel_63(X,Y), rel_21(Y,Z).
+rel_21(X,Z) :- rel_21(X,Y), rel_21(Y,Z).
+rel_21(X,Z) :- rel_47(Y,X), rel_21(Y,Z).
+rel_77(X,Z) :- rel_77(Y,X), rel_77(Z,Y).
+rel_77(X,Z) :- rel_77(Y,X), rel_77(Y,Z).
+rel_77(X,Z) :- rel_21(Y,X), rel_77(Z,Y).
+rel_162(X,Z) :- rel_162(X,Y), rel_162(Y,Z).
+rel_162(X,Y) :- rel_227(X,Y).
+rel_42(X,Y) :- rel_133(X,Y).
+rel_42(X,Z) :- rel_42(X,Y), rel_42(Y,Z).
+rel_51(X,Z) :- rel_61(X,Y), rel_61(Y,Z).
+rel_51(X,Z) :- rel_51(X,Y), rel_51(Y,Z).
+rel_193(X,Y) :- rel_31(Y,X).
+rel_193(X,Z) :- rel_193(X,Y), rel_193(Y,Z).
+rel_93(X,Z) :- rel_78(Y,X), rel_157(Z,Y).
+rel_93(X,Z) :- rel_93(X,Y), rel_93(Y,Z).
+rel_25(X,Z) :- rel_25(X,Y), rel_25(Y,Z).
+rel_25(X,Y) :- rel_59(X,Y).
+rel_38(X,Z) :- rel_30(Y,X), rel_157(Y,Z).
+rel_38(X,Z) :- rel_30(Y,X), rel_119(Z,Y).
+rel_38(X,Z) :- rel_61(X,Y), rel_186(Y,Z).
+rel_157(X,Z) :- rel_38(X,Y), rel_38(Y,Z).
+rel_157(X,Z) :- rel_149(Y,X), rel_38(Y,Z).
+rel_157(X,Z) :- rel_38(X,Y), rel_31(Z,Y).
+rel_157(X,Z) :- rel_149(Y,X), rel_31(Z,Y).
+rel_157(X,Z) :- rel_157(X,Y), rel_0(Y,Z).
+rel_229(X,Z) :- rel_229(X,Y), rel_229(Y,Z).
+rel_229(X,Z) :- rel_229(X,Y), rel_229(Y,Z).
+rel_229(X,Z) :- rel_47(Y,X), rel_229(Y,Z).
+rel_229(X,Z) :- rel_173(Y,X), rel_229(Y,Z).
+rel_43(X,Y) :- rel_68(X,Y).
+rel_43(X,Z) :- rel_43(X,Y), rel_43(Y,Z).
+rel_223(X,Y) :- rel_223(X,Y).
+rel_223(X,Z) :- rel_223(Y,X), rel_223(Z,Y).
+rel_231(X,Z) :- rel_231(X,Y), rel_231(Y,Z).
+rel_231(X,Z) :- rel_31(Y,X), rel_61(Z,Y).
+rel_184(X,Z) :- rel_119(X,Y), rel_119(Y,Z).
+rel_184(X,Z) :- rel_85(X,Y), rel_85(Y,Z).
+rel_84(X,Y) :- rel_66(Y,X).
+rel_84(X,Y) :- rel_66(X,Y).
+rel_26(X,Z) :- rel_227(Y,X), rel_227(Z,Y).
+rel_26(X,Z) :- rel_167(X,Y), rel_176(Y,Z).
+rel_104(X,Y) :- rel_5(X,Y).
+rel_104(X,Z) :- rel_82(Y,X), rel_82(Z,Y).
+rel_32(X,Z) :- rel_82(X,Y), rel_82(Y,Z).
+rel_32(X,Y) :- rel_159(X,Y).
+rel_133(X,Y) :- rel_19(X,Y).
+rel_133(X,Z) :- rel_46(Y,X), rel_46(Z,Y).
+rel_172(X,Y) :- rel_228(Y,X).
+rel_172(X,Y) :- rel_167(Y,X).
+rel_220(X,Z) :- rel_220(X,Y), rel_220(Y,Z).
+rel_220(X,Z) :- rel_220(X,Y), rel_220(Z,Y).
+rel_220(X,Z) :- rel_21(X,Y), rel_21(Y,Z).
+rel_212(X,Y) :- rel_106(X,Y).
+rel_212(X,Z) :- rel_212(X,Y), rel_212(Y,Z).
+rel_164(X,Z) :- rel_145(X,Y), rel_145(Y,Z).
+rel_164(X,Z) :- rel_232(X,Y), rel_81(Y,Z).
+rel_164(X,Z) :- rel_81(X,Y), rel_81(Y,Z).
+rel_145(X,Z) :- rel_164(X,Y), rel_201(Y,Z).
+rel_145(X,Z) :- rel_61(X,Y), rel_37(Y,Z).
+rel_234(X,Y) :- rel_46(X,Y).
+rel_234(X,Z) :- rel_35(X,Y), rel_222(Y,Z).
+rel_47(X,Y) :- rel_202(Y,X).
+rel_47(X,Y) :- rel_202(X,Y).
+rel_161(X,Y) :- rel_66(Y,X).
+rel_161(X,Y) :- rel_66(X,Y).
+rel_24(X,Z) :- rel_24(X,Y), rel_24(Y,Z).
+rel_24(X,Z) :- rel_158(X,Y), rel_158(Y,Z).
+rel_138(X,Z) :- rel_201(X,Y), rel_201(Y,Z).
+rel_138(X,Z) :- rel_219(X,Y), rel_219(Y,Z).
+rel_113(X,Z) :- rel_233(Y,X), rel_106(Z,Y).
+rel_113(X,Z) :- rel_113(X,Y), rel_113(Y,Z).
+rel_64(X,Z) :- rel_145(X,Y), rel_145(Y,Z).
+rel_64(X,Z) :- rel_219(X,Y), rel_219(Y,Z).
+rel_83(X,Z) :- rel_145(X,Y), rel_106(Z,Y).
+rel_83(X,Z) :- rel_234(X,Y), rel_234(Y,Z).
+rel_205(X,Z) :- rel_205(X,Y), rel_205(Y,Z).
+rel_205(X,Z) :- rel_205(X,Y), rel_117(Y,Z).
+rel_205(X,Z) :- rel_145(Y,X), rel_27(Z,Y).
+rel_205(X,Z) :- rel_27(Y,X), rel_27(Z,Y).
+rel_205(X,Z) :- rel_11(Y,X), rel_27(Z,Y).
+rel_5(X,Y) :- rel_167(X,Y).
+rel_5(X,Z) :- rel_47(Y,X), rel_228(Z,Y).
+rel_227(X,Z) :- rel_132(Y,X), rel_5(Z,Y).
+rel_227(X,Z) :- rel_133(X,Y), rel_133(Y,Z).
+rel_58(X,Y) :- rel_144(X,Y).
+rel_58(X,Z) :- rel_58(X,Y), rel_58(Y,Z).
+rel_153(X,Z) :- rel_154(X,Y), rel_154(Y,Z).
+rel_153(X,Z) :- rel_154(X,Y), rel_1(Z,Y).
+rel_153(X,Y) :- rel_62(X,Y).
+rel_105(X,Z) :- rel_91(X,Y), rel_91(Y,Z).
+rel_105(X,Z) :- rel_106(X,Y), rel_39(Z,Y).
+rel_136(X,Z) :- rel_136(X,Y), rel_136(Y,Z).
+rel_136(X,Z) :- rel_221(Y,X), rel_221(Z,Y).
+rel_91(X,Z) :- rel_136(X,Y), rel_136(Y,Z).
+rel_91(X,Y) :- rel_221(X,Y).
+rel_182(X,Y) :- rel_66(Y,X).
+rel_182(X,Y) :- rel_66(X,Y).
+rel_1(X,Z) :- rel_16(Y,X), rel_137(Z,Y).
+rel_1(X,Z) :- rel_62(X,Y), rel_62(Y,Z).
+rel_97(X,Z) :- rel_8(X,Y), rel_106(Y,Z).
+rel_97(X,Z) :- rel_97(X,Y), rel_97(Y,Z).
+rel_88(X,Z) :- rel_39(X,Y), rel_39(Y,Z).
+rel_88(X,Z) :- rel_221(Y,X), rel_221(Z,Y).
+rel_39(X,Z) :- rel_39(X,Y), rel_105(Z,Y).
+rel_39(X,Y) :- rel_158(Y,X).
+rel_142(X,Y) :- rel_66(Y,X).
+rel_142(X,Y) :- rel_66(X,Y).
+rel_185(X,Z) :- rel_221(X,Y), rel_221(Y,Z).
+rel_185(X,Z) :- rel_221(Y,X), rel_221(Z,Y).
+rel_221(X,Z) :- rel_113(Y,X), rel_185(Y,Z).
+rel_221(X,Z) :- rel_113(Y,X), rel_221(Y,Z).
+rel_221(X,Z) :- rel_57(Y,X), rel_57(Z,Y).
+rel_214(X,Z) :- rel_39(X,Y), rel_39(Y,Z).
+rel_214(X,Z) :- rel_219(X,Y), rel_219(Y,Z).
+rel_101(X,Y) :- rel_66(Y,X).
+rel_101(X,Z) :- rel_58(Y,X), rel_58(Z,Y).
+rel_217(X,Z) :- rel_58(X,Y), rel_58(Y,Z).
+rel_217(X,Z) :- rel_222(X,Y), rel_222(Y,Z).
+rel_203(X,Z) :- rel_39(X,Y), rel_31(Z,Y).
+rel_203(X,Z) :- rel_222(X,Y), rel_222(Y,Z).
+rel_127(X,Z) :- rel_200(Y,X), rel_200(Z,Y).
+rel_127(X,Z) :- rel_232(X,Y), rel_232(Y,Z).
+rel_82(X,Y) :- rel_19(X,Y).
+rel_82(X,Y) :- rel_66(Y,X).
+rel_141(X,Y) :- rel_146(Y,X).
+rel_141(X,Z) :- rel_44(Y,X), rel_44(Z,Y).
+rel_46(X,Z) :- rel_46(X,Y), rel_46(Y,Z).
+rel_46(X,Z) :- rel_46(X,Y), rel_143(Z,Y).
+rel_46(X,Z) :- rel_66(Y,X), rel_143(Z,Y).
+rel_191(X,Z) :- rel_7(X,Y), rel_45(Y,Z).
+rel_191(X,Z) :- rel_191(X,Y), rel_191(Y,Z).
+rel_3(X,Z) :- rel_159(X,Y), rel_66(Z,Y).
+rel_3(X,Z) :- rel_3(X,Y), rel_3(Y,Z).
+rel_114(X,Y) :- rel_46(Y,X).
+rel_114(X,Z) :- rel_61(X,Y), rel_186(Y,Z).
+rel_114(X,Z) :- rel_61(X,Y), rel_114(Y,Z).
+rel_52(X,Z) :- rel_66(Y,X), rel_66(Z,Y).
+rel_52(X,Z) :- rel_52(X,Y), rel_52(Y,Z).
+rel_14(X,Z) :- rel_14(X,Y), rel_14(Y,Z).
+rel_14(X,Z) :- rel_18(X,Y), rel_18(Y,Z).
+rel_200(X,Z) :- rel_44(Y,X), rel_66(Y,Z).
+rel_200(X,Z) :- rel_44(Y,X), rel_66(Z,Y).
+rel_200(X,Z) :- rel_66(X,Y), rel_200(Y,Z).
+rel_140(X,Z) :- rel_44(Y,X), rel_66(Z,Y).
+rel_140(X,Z) :- rel_102(X,Y), rel_102(Y,Z).
+rel_35(X,Y) :- rel_82(Y,X).
+rel_35(X,Z) :- rel_222(X,Y), rel_222(Y,Z).
+rel_7(X,Z) :- rel_7(X,Y), rel_7(Y,Z).
+rel_7(X,Z) :- rel_7(X,Y), rel_7(Y,Z).
+rel_60(X,Y) :- rel_159(X,Y).
+rel_60(X,Y) :- rel_30(X,Y).
+rel_69(X,Y) :- rel_68(Y,X).
+rel_69(X,Z) :- rel_68(Y,X), rel_69(Y,Z).
+rel_218(X,Y) :- rel_45(X,Y).
+rel_218(X,Z) :- rel_15(Y,X), rel_15(Z,Y).
+rel_188(X,Y) :- rel_66(Y,X).
+rel_188(X,Z) :- rel_188(X,Y), rel_188(Y,Z).
+rel_94(X,Y) :- rel_45(Y,X).
+rel_94(X,Z) :- rel_69(X,Y), rel_69(Y,Z).
+rel_94(X,Z) :- rel_68(Y,X), rel_69(Y,Z).
+rel_4(X,Y) :- rel_66(Y,X).
+rel_4(X,Z) :- rel_185(Y,X), rel_132(Y,Z).
+rel_17(X,Y) :- rel_82(Y,X).
+rel_17(X,Z) :- rel_232(X,Y), rel_164(Y,Z).
+rel_86(X,Z) :- rel_159(X,Y), rel_159(Y,Z).
+rel_86(X,Z) :- rel_86(X,Y), rel_86(Y,Z).
+rel_102(X,Y) :- rel_66(Y,X).
+rel_102(X,Z) :- rel_102(X,Y), rel_102(Y,Z).
+rel_111(X,Y) :- rel_66(Y,X).
+rel_111(X,Z) :- rel_115(Y,X), rel_111(Y,Z).
+rel_146(X,Z) :- rel_146(X,Y), rel_146(Y,Z).
+rel_146(X,Y) :- rel_146(X,Y).
+rel_66(X,Z) :- rel_159(X,Y), rel_82(Z,Y).
+rel_66(X,Z) :- rel_66(Y,X), rel_69(Z,Y).
+rel_120(X,Z) :- rel_143(X,Y), rel_66(Y,Z).
+rel_120(X,Z) :- rel_143(X,Y), rel_169(Z,Y).
+rel_120(X,Z) :- rel_120(X,Y), rel_120(Y,Z).
+rel_233(X,Y) :- rel_66(Y,X).
+rel_233(X,Z) :- rel_169(X,Y), rel_233(Y,Z).
+rel_76(X,Z) :- rel_218(X,Y), rel_218(Y,Z).
+rel_76(X,Z) :- rel_15(X,Y), rel_12(Y,Z).
+rel_76(X,Z) :- rel_119(X,Y), rel_12(Y,Z).
+rel_187(X,Y) :- rel_77(X,Y).
+rel_187(X,Z) :- rel_187(X,Y), rel_187(Y,Z).
+rel_75(X,Z) :- rel_62(X,Y), rel_200(Y,Z).
+rel_75(X,Z) :- rel_61(X,Y), rel_75(Y,Z).
+rel_122(X,Y) :- rel_35(X,Y).
+rel_122(X,Z) :- rel_61(X,Y), rel_75(Y,Z).
+rel_159(X,Z) :- rel_159(X,Y), rel_159(Y,Z).
+rel_159(X,Z) :- rel_159(X,Y), rel_159(Y,Z).
+rel_143(X,Y) :- rel_66(X,Y).
+rel_143(X,Z) :- rel_143(X,Y), rel_143(Y,Z).
+rel_199(X,Z) :- rel_199(X,Y), rel_66(Z,Y).
+rel_199(X,Y) :- rel_66(Y,X).
+rel_68(X,Z) :- rel_69(Y,X), rel_69(Z,Y).
+rel_68(X,Z) :- rel_45(X,Y), rel_69(Z,Y).
+rel_224(X,Z) :- rel_224(X,Y), rel_93(Y,Z).
+rel_224(X,Y) :- rel_66(Y,X).
+rel_236(X,Y) :- rel_167(Y,X).
+rel_236(X,Z) :- rel_236(X,Y), rel_236(Y,Z).
+rel_44(X,Z) :- rel_141(Y,X), rel_141(Z,Y).
+rel_44(X,Z) :- rel_66(X,Y), rel_146(Z,Y).
+rel_13(X,Z) :- rel_146(X,Y), rel_200(Y,Z).
+rel_13(X,Z) :- rel_13(X,Y), rel_85(Z,Y).
+rel_170(X,Z) :- rel_170(X,Y), rel_170(Y,Z).
+rel_170(X,Y) :- rel_230(Y,X).
+rel_112(X,Z) :- rel_112(X,Y), rel_112(Y,Z).
+rel_112(X,Z) :- rel_34(Y,X), rel_34(Z,Y).
+rel_176(X,Z) :- rel_176(X,Y), rel_176(Y,Z).
+rel_176(X,Z) :- rel_176(X,Y), rel_176(Y,Z).
+rel_34(X,Z) :- rel_34(Y,X), rel_34(Z,Y).
+rel_34(X,Z) :- rel_34(Y,X), rel_34(Z,Y).
+rel_73(X,Z) :- rel_73(X,Y), rel_73(Y,Z).
+rel_73(X,Y) :- rel_157(Y,X).
+rel_211(X,Z) :- rel_92(X,Y), rel_11(Z,Y).
+rel_211(X,Z) :- rel_92(X,Y), rel_28(Y,Z).
+rel_211(X,Z) :- rel_170(Y,X), rel_170(Z,Y).
+rel_92(X,Z) :- rel_92(X,Y), rel_92(Y,Z).
+rel_92(X,Z) :- rel_157(X,Y), rel_174(Z,Y).
+rel_190(X,Z) :- rel_190(X,Y), rel_190(Y,Z).
+rel_190(X,Z) :- rel_34(Y,X), rel_34(Z,Y).
+rel_190(X,Z) :- rel_190(X,Y), rel_34(Z,Y).
+rel_65(X,Z) :- rel_65(X,Y), rel_65(Y,Z).
+rel_65(X,Z) :- rel_144(Y,X), rel_144(Z,Y).
+rel_173(X,Y) :- rel_66(X,Y).
+rel_173(X,Y) :- rel_173(X,Y).
+rel_158(X,Z) :- rel_159(Y,X), rel_159(Z,Y).
+rel_158(X,Z) :- rel_159(X,Y), rel_159(Y,Z).
+rel_70(X,Z) :- rel_232(Y,X), rel_232(Z,Y).
+rel_70(X,Z) :- rel_89(X,Y), rel_186(Y,Z).
+rel_41(X,Z) :- rel_92(Y,X), rel_157(Z,Y).
+rel_41(X,Z) :- rel_197(X,Y), rel_157(Z,Y).
+rel_41(X,Z) :- rel_115(Y,X), rel_41(Y,Z).
+rel_78(X,Z) :- rel_174(Y,X), rel_174(Z,Y).
+rel_78(X,Z) :- rel_41(Y,X), rel_41(Z,Y).
+rel_154(X,Z) :- rel_186(Y,X), rel_198(Y,Z).
+rel_154(X,Z) :- rel_198(X,Y), rel_198(Y,Z).
+rel_154(X,Z) :- rel_149(X,Y), rel_149(Y,Z).
+rel_183(X,Y) :- rel_61(Y,X).
+rel_183(X,Z) :- rel_183(X,Y), rel_183(Y,Z).
+rel_232(X,Z) :- rel_230(X,Y), rel_61(Z,Y).
+rel_232(X,Z) :- rel_81(X,Y), rel_164(Y,Z).
+rel_232(X,Z) :- rel_232(X,Y), rel_164(Y,Z).
+rel_174(X,Z) :- rel_174(X,Y), rel_174(Y,Z).
+rel_174(X,Z) :- rel_157(X,Y), rel_197(Z,Y).
+rel_210(X,Z) :- rel_157(X,Y), rel_157(Y,Z).
+rel_210(X,Z) :- rel_210(X,Y), rel_210(Y,Z).
+rel_116(X,Y) :- rel_66(Y,X).
+rel_116(X,Y) :- rel_66(X,Y).
+rel_79(X,Y) :- rel_78(Y,X).
+rel_79(X,Z) :- rel_79(X,Y), rel_79(Y,Z).
+rel_61(X,Z) :- rel_85(X,Y), rel_119(Z,Y).
+rel_61(X,Z) :- rel_61(X,Y), rel_85(Z,Y).
+rel_31(X,Z) :- rel_38(Y,X), rel_210(Z,Y).
+rel_31(X,Z) :- rel_157(X,Y), rel_30(Y,Z).
+rel_226(X,Z) :- rel_137(Y,X), rel_226(Y,Z).
+rel_226(X,Z) :- rel_61(X,Y), rel_186(Y,Z).
+rel_197(X,Y) :- rel_78(Y,X).
+rel_197(X,Z) :- rel_197(X,Y), rel_197(Y,Z).
+rel_219(X,Z) :- rel_0(Y,X), rel_0(Z,Y).
+rel_219(X,Z) :- rel_222(X,Y), rel_222(Y,Z).
+rel_29(X,Z) :- rel_172(X,Y), rel_85(Y,Z).
+rel_29(X,Z) :- rel_222(X,Y), rel_222(Y,Z).
+rel_18(X,Y) :- rel_29(X,Y).
+rel_18(X,Z) :- rel_222(Y,X), rel_8(Z,Y).
+rel_196(X,Z) :- rel_85(X,Y), rel_61(Z,Y).
+rel_196(X,Z) :- rel_213(X,Y), rel_213(Y,Z).
+rel_150(X,Z) :- rel_174(Y,X), rel_38(Y,Z).
+rel_150(X,Z) :- rel_174(Y,X), rel_174(Z,Y).
+rel_150(X,Z) :- rel_222(X,Y), rel_222(Y,Z).
+rel_100(X,Y) :- rel_66(Y,X).
+rel_100(X,Y) :- rel_66(X,Y).
+rel_166(X,Z) :- rel_166(X,Y), rel_106(Y,Z).
+rel_166(X,Y) :- rel_82(X,Y).
+rel_235(X,Z) :- rel_235(X,Y), rel_235(Y,Z).
+rel_235(X,Y) :- rel_167(X,Y).
+rel_178(X,Z) :- rel_235(X,Y), rel_168(Y,Z).
+rel_178(X,Z) :- rel_148(X,Y), rel_148(Y,Z).
+rel_109(X,Z) :- rel_109(X,Y), rel_119(Z,Y).
+rel_109(X,Y) :- rel_66(X,Y).
+rel_56(X,Z) :- rel_56(X,Y), rel_56(Y,Z).
+rel_56(X,Z) :- rel_119(X,Y), rel_8(Z,Y).
+rel_103(X,Z) :- rel_103(X,Y), rel_103(Y,Z).
+rel_103(X,Y) :- rel_56(Y,X).
+rel_181(X,Z) :- rel_181(X,Y), rel_181(Y,Z).
+rel_181(X,Z) :- rel_151(X,Y), rel_151(Y,Z).
+rel_12(X,Y) :- rel_19(Y,X).
+rel_12(X,Z) :- rel_22(X,Y), rel_12(Y,Z).
+rel_12(X,Z) :- rel_22(X,Y), rel_85(Z,Y).
+rel_50(X,Z) :- rel_50(X,Y), rel_19(Y,Z).
+rel_50(X,Z) :- rel_50(X,Y), rel_50(Y,Z).
+rel_59(X,Z) :- rel_132(Y,X), rel_132(Z,Y).
+rel_59(X,Y) :- rel_19(Y,X).
+rel_194(X,Y) :- rel_66(X,Y).
+rel_194(X,Z) :- rel_59(Y,X), rel_59(Z,Y).
+rel_19(X,Z) :- rel_46(X,Y), rel_19(Y,Z).
+rel_19(X,Z) :- rel_19(X,Y), rel_19(Y,Z).
+rel_40(X,Z) :- rel_19(X,Y), rel_19(Y,Z).
+rel_40(X,Z) :- rel_151(X,Y), rel_40(Y,Z).
+rel_206(X,Y) :- rel_66(Y,X).
+rel_206(X,Z) :- rel_206(X,Y), rel_206(Y,Z).
+rel_118(X,Z) :- rel_118(X,Y), rel_151(Z,Y).
+rel_118(X,Y) :- rel_99(Y,X).
+rel_151(X,Z) :- rel_118(X,Y), rel_151(Z,Y).
+rel_151(X,Z) :- rel_118(X,Y), rel_118(Y,Z).
+rel_151(X,Y) :- rel_169(X,Y).
+rel_216(X,Y) :- rel_118(X,Y).
+rel_216(X,Z) :- rel_216(X,Y), rel_216(Y,Z).
+rel_49(X,Z) :- rel_66(Y,X), rel_66(Z,Y).
+rel_49(X,Z) :- rel_49(X,Y), rel_223(Y,Z).
+rel_121(X,Z) :- rel_63(X,Y), rel_121(Z,Y).
+rel_121(X,Y) :- rel_121(Y,X).
+rel_204(X,Z) :- rel_204(X,Y), rel_169(Z,Y).
+rel_204(X,Y) :- rel_19(X,Y).
+rel_139(X,Z) :- rel_198(Y,X), rel_198(Z,Y).
+rel_139(X,Z) :- rel_152(X,Y), rel_152(Y,Z).
+rel_48(X,Z) :- rel_48(X,Y), rel_139(Y,Z).
+rel_48(X,Z) :- rel_61(X,Y), rel_8(Z,Y).
+rel_53(X,Z) :- rel_198(Y,X), rel_198(Z,Y).
+rel_53(X,Z) :- rel_123(Y,X), rel_123(Z,Y).
+rel_55(X,Z) :- rel_123(Y,X), rel_61(Z,Y).
+rel_55(X,Z) :- rel_37(Y,X), rel_61(Z,Y).
+rel_55(X,Z) :- rel_177(X,Y), rel_177(Y,Z).
+rel_152(X,Y) :- rel_61(Y,X).
+rel_152(X,Z) :- rel_139(X,Y), rel_139(Y,Z).
+rel_198(X,Y) :- rel_61(Y,X).
+rel_198(X,Z) :- rel_53(Y,X), rel_53(Z,Y).
+rel_123(X,Z) :- rel_123(X,Y), rel_177(Y,Z).
+rel_123(X,Y) :- rel_61(X,Y).
+rel_123(X,Z) :- rel_61(X,Y), rel_61(Y,Z).
+rel_177(X,Z) :- rel_123(X,Y), rel_123(Y,Z).
+rel_177(X,Z) :- rel_198(X,Y), rel_198(Y,Z).
+rel_67(X,Z) :- rel_201(X,Y), rel_201(Y,Z).
+rel_67(X,Z) :- rel_219(X,Y), rel_219(Y,Z).
+rel_36(X,Y) :- rel_106(Y,X).
+rel_36(X,Z) :- rel_36(X,Y), rel_36(Y,Z).
+rel_106(X,Z) :- rel_106(X,Y), rel_106(Y,Z).
+rel_106(X,Z) :- rel_28(Y,X), rel_106(Y,Z).
+rel_106(X,Y) :- rel_39(Y,X).
+rel_201(X,Z) :- rel_39(X,Y), rel_39(Y,Z).
+rel_201(X,Z) :- rel_60(X,Y), rel_201(Y,Z).
+rel_37(X,Z) :- rel_169(Y,X), rel_169(Z,Y).
+rel_37(X,Z) :- rel_38(X,Y), rel_38(Y,Z).
+rel_0(X,Z) :- rel_39(X,Y), rel_201(Y,Z).
+rel_0(X,Z) :- rel_201(X,Y), rel_201(Y,Z).
+rel_0(X,Z) :- rel_157(X,Y), rel_157(Y,Z).
+rel_27(X,Z) :- rel_27(X,Y), rel_27(Y,Z).
+rel_27(X,Z) :- rel_149(X,Y), rel_149(Y,Z).
+rel_169(X,Z) :- rel_72(X,Y), rel_72(Y,Z).
+rel_169(X,Z) :- rel_120(Y,X), rel_72(Y,Z).
+rel_169(X,Z) :- rel_20(Y,X), rel_20(Z,Y).
+rel_230(X,Z) :- rel_137(Y,X), rel_137(Z,Y).
+rel_230(X,Z) :- rel_169(X,Y), rel_230(Y,Z).
+rel_117(X,Z) :- rel_117(X,Y), rel_117(Y,Z).
+rel_117(X,Z) :- rel_31(X,Y), rel_37(Z,Y).
+rel_168(X,Z) :- rel_168(X,Y), rel_168(Y,Z).
+rel_168(X,Y) :- rel_148(Y,X).
+rel_192(X,Z) :- rel_120(Y,X), rel_120(Z,Y).
+rel_192(X,Z) :- rel_120(Y,X), rel_192(Y,Z).
+rel_192(X,Z) :- rel_192(X,Y), rel_192(Y,Z).
+rel_149(X,Y) :- rel_158(X,Y).
+rel_149(X,Z) :- rel_201(X,Y), rel_149(Y,Z).
+rel_89(X,Z) :- rel_110(X,Y), rel_89(Y,Z).
+rel_89(X,Z) :- rel_61(X,Y), rel_172(Z,Y).
+rel_134(X,Z) :- rel_134(X,Y), rel_89(Y,Z).
+rel_134(X,Z) :- rel_232(X,Y), rel_164(Y,Z).
+rel_110(X,Z) :- rel_110(X,Y), rel_213(Z,Y).
+rel_110(X,Y) :- rel_143(X,Y).
+rel_71(X,Z) :- rel_71(X,Y), rel_71(Y,Z).
+rel_71(X,Y) :- rel_38(Y,X).
+rel_28(X,Z) :- rel_207(X,Y), rel_207(Y,Z).
+rel_28(X,Z) :- rel_20(Y,X), rel_20(Z,Y).
+rel_148(X,Y) :- rel_137(X,Y).
+rel_148(X,Z) :- rel_148(X,Y), rel_148(Y,Z).
+rel_81(X,Y) :- rel_66(Y,X).
+rel_81(X,Z) :- rel_232(X,Y), rel_81(Y,Z).
+rel_81(X,Z) :- rel_232(X,Y), rel_232(Y,Z).
+rel_186(X,Z) :- rel_202(X,Y), rel_202(Y,Z).
+rel_186(X,Z) :- rel_89(X,Y), rel_174(Z,Y).
+rel_30(X,Y) :- rel_137(X,Y).
+rel_30(X,Z) :- rel_30(X,Y), rel_154(Y,Z).
+rel_22(X,Y) :- rel_137(X,Y).
+rel_22(X,Y) :- rel_157(X,Y).
+rel_2(X,Y) :- rel_115(X,Y).
+rel_2(X,Z) :- rel_115(Y,X), rel_2(Y,Z).
+rel_213(X,Y) :- rel_167(X,Y).
+rel_213(X,Z) :- rel_213(X,Y), rel_213(Y,Z).
+rel_137(X,Z) :- rel_46(X,Y), rel_46(Y,Z).
+rel_137(X,Y) :- rel_124(X,Y).
+rel_228(X,Z) :- rel_167(Y,X), rel_167(Y,Z).
+rel_228(X,Z) :- rel_167(X,Y), rel_167(Y,Z).
+rel_228(X,Z) :- rel_228(X,Y), rel_228(Y,Z).
+rel_167(X,Z) :- rel_159(Y,X), rel_159(Z,Y).
+rel_167(X,Y) :- rel_158(Y,X).
+rel_126(X,Y) :- rel_186(X,Y).
+rel_126(X,Z) :- rel_71(Y,X), rel_71(Z,Y).
+rel_126(X,Z) :- rel_126(X,Y), rel_71(Z,Y).
+rel_115(X,Z) :- rel_2(Y,X), rel_2(Z,Y).
+rel_115(X,Z) :- rel_2(X,Y), rel_2(Y,Z).
+rel_189(X,Z) :- rel_175(Y,X), rel_175(Z,Y).
+rel_189(X,Z) :- rel_130(Y,X), rel_130(Z,Y).
+rel_54(X,Z) :- rel_143(X,Y), rel_144(Y,Z).
+rel_54(X,Z) :- rel_144(Y,X), rel_144(Z,Y).
+rel_225(X,Y) :- rel_66(X,Y).
+rel_225(X,Z) :- rel_144(Y,X), rel_144(Z,Y).
+rel_202(X,Z) :- rel_137(Y,X), rel_175(Z,Y).
+rel_202(X,Z) :- rel_85(X,Y), rel_85(Y,Z).
+rel_202(X,Z) :- rel_157(X,Y), rel_85(Y,Z).
+rel_87(X,Z) :- rel_16(X,Y), rel_16(Y,Z).
+rel_87(X,Z) :- rel_195(Y,X), rel_195(Z,Y).
+rel_16(X,Y) :- rel_87(X,Y).
+rel_16(X,Y) :- rel_195(X,Y).
+rel_175(X,Z) :- rel_130(Y,X), rel_130(Z,Y).
+rel_175(X,Z) :- rel_202(Y,X), rel_202(Z,Y).
+rel_90(X,Z) :- rel_164(X,Y), rel_164(Y,Z).
+rel_90(X,Z) :- rel_164(Y,X), rel_164(Z,Y).
+rel_195(X,Z) :- rel_87(Y,X), rel_87(Z,Y).
+rel_195(X,Z) :- rel_16(X,Y), rel_16(Y,Z).
+rel_165(X,Z) :- rel_62(X,Y), rel_144(Y,Z).
+rel_165(X,Y) :- rel_137(X,Y).
+rel_144(X,Y) :- rel_54(Y,X).
+rel_144(X,Z) :- rel_144(Y,X), rel_144(Z,Y).
+rel_128(X,Z) :- rel_144(X,Y), rel_144(Y,Z).
+rel_128(X,Z) :- rel_65(Y,X), rel_8(Z,Y).
+rel_62(X,Y) :- rel_66(X,Y).
+rel_62(X,Z) :- rel_1(X,Y), rel_1(Y,Z).
+rel_74(X,Z) :- rel_128(Y,X), rel_43(Z,Y).
+rel_74(X,Z) :- rel_144(Y,X), rel_144(Z,Y).
+rel_163(X,Z) :- rel_180(X,Y), rel_180(Y,Z).
+rel_163(X,Z) :- rel_144(X,Y), rel_144(Y,Z).
+rel_98(X,Y) :- rel_19(Y,X).
+rel_98(X,Z) :- rel_144(X,Y), rel_144(Y,Z).
+rel_8(X,Z) :- rel_128(Y,X), rel_141(Z,Y).
+rel_8(X,Z) :- rel_144(Y,X), rel_144(Z,Y).
+rel_130(X,Z) :- rel_85(Y,X), rel_47(Y,Z).
+rel_130(X,Z) :- rel_130(X,Y), rel_175(Z,Y).
+rel_85(X,Y) :- rel_30(Y,X).
+rel_85(X,Z) :- rel_189(X,Y), rel_189(Y,Z).
+rel_15(X,Z) :- rel_218(Y,X), rel_80(Z,Y).
+rel_15(X,Z) :- rel_96(X,Y), rel_96(Y,Z).
+rel_119(X,Z) :- rel_184(X,Y), rel_184(Y,Z).
+rel_119(X,Z) :- rel_85(Y,X), rel_85(Z,Y).
+rel_23(X,Z) :- rel_23(X,Y), rel_23(Y,Z).
+rel_23(X,Z) :- rel_223(Y,X), rel_223(Z,Y).
+rel_107(X,Z) :- rel_61(X,Y), rel_61(Y,Z).
+rel_107(X,Z) :- rel_107(X,Y), rel_107(Y,Z).
+rel_209(X,Z) :- rel_209(X,Y), rel_209(Y,Z).
+rel_209(X,Y) :- rel_158(Y,X).
+rel_20(X,Z) :- rel_201(X,Y), rel_201(Y,Z).
+rel_20(X,Z) :- rel_131(Y,X), rel_131(Z,Y).
+rel_57(X,Y) :- rel_11(X,Y).
+rel_57(X,Z) :- rel_131(Y,X), rel_57(Y,Z).
+rel_6(X,Y) :- rel_99(X,Y).
+rel_6(X,Z) :- rel_156(X,Y), rel_6(Y,Z).
+rel_99(X,Z) :- rel_143(Y,X), rel_169(Z,Y).
+rel_99(X,Z) :- rel_99(X,Y), rel_99(Y,Z).
+rel_131(X,Z) :- rel_20(Y,X), rel_232(Z,Y).
+rel_131(X,Z) :- rel_157(X,Y), rel_37(Y,Z).
+rel_135(X,Y) :- rel_77(Y,X).
+rel_135(X,Z) :- rel_135(X,Y), rel_135(Y,Z).
+rel_171(X,Z) :- rel_124(X,Y), rel_131(Y,Z).
+rel_171(X,Z) :- rel_232(X,Y), rel_232(Y,Z).
+rel_63(X,Z) :- rel_99(Y,X), rel_99(Z,Y).
+rel_63(X,Z) :- rel_99(Y,X), rel_99(Z,Y).
+rel_124(X,Z) :- rel_124(X,Y), rel_131(Y,Z).
+rel_124(X,Y) :- rel_5(X,Y).
+rel_156(X,Z) :- rel_99(Y,X), rel_99(Z,Y).
+rel_156(X,Z) :- rel_6(X,Y), rel_6(Y,Z).
+rel_72(X,Z) :- rel_158(X,Y), rel_158(Y,Z).
+rel_72(X,Z) :- rel_72(X,Y), rel_72(Y,Z).
+rel_207(X,Y) :- rel_28(X,Y).
+rel_207(X,Z) :- rel_207(X,Y), rel_207(Y,Z).
+rel_95(X,Z) :- rel_198(Y,X), rel_198(Z,Y).
+rel_95(X,Z) :- rel_123(Y,X), rel_123(Z,Y).
+rel_33(X,Z) :- rel_33(X,Y), rel_33(Y,Z).
+rel_33(X,Y) :- rel_61(X,Y).
+rel_147(X,Y) :- rel_85(X,Y).
+rel_147(X,Z) :- rel_147(X,Y), rel_147(Y,Z).
