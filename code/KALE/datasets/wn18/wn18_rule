@@ -1,0 +1,8 @@
+_also_see(y,x)==>_also_see(x,y)
+_derivationally_related_form(x,y)&&_synset_domain_topic_of(y,z)==>_synset_domain_topic_of(x,z)
+_hypernym(x,y)&&_synset_domain_topic_of(y,z)==>_synset_domain_topic_of(x,z)
+_hypernym(y,x)&&_synset_domain_topic_of(y,z)==>_synset_domain_topic_of(x,z)
+_instance_hypernym(x,y)&&_synset_domain_topic_of(y,z)==>_synset_domain_topic_of(x,z)
+_has_part(x,y)&&_instance_hypernym(z,y)==>_has_part(x,z)
+_derivationally_related_form(x,y)&&_verb_group(z,y)==>_derivationally_related_form(x,z)
+_verb_group(y,x)&&_derivationally_related_form(y,z)==>_derivationally_related_form(x,z)

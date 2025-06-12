@@ -1,0 +1,30 @@
+
+{
+    "configs": [
+          {
+     "device": 1,
+     "epochs": 1000,
+     "model": "BoxE",
+     "seed": 1234,
+     "create_inverse_triples": true,
+     "wandb_tag": ["BoxE on", "gpu"]
+     },
+          {
+     "device": 1,
+     "epochs": 1000,
+     "model": "TransE",
+     "seed": 1234,
+     "create_inverse_triples": true,
+     "wandb_tag": ["TransE on", "gpu"]
+     },
+          {
+     "device": 1,
+     "epochs": 1000,
+     "model": "RotatE",
+     "seed": 1234,
+     "create_inverse_triples": true,
+     "wandb_tag": ["RotatE on", "gpu"]
+          }
+    ]
+
+  }

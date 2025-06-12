@@ -1,8 +1,0 @@
-0.932938856	_also_see	_also_see_v
-0.492857143	_synset_domain_topic_of	_derivationally_related_form	_synset_domain_topic_of
-0.82887078	_synset_domain_topic_of	_hypernym	_synset_domain_topic_of
-0.726666667	_synset_domain_topic_of	_hypernym_v	_synset_domain_topic_of
-0.887323944	_synset_domain_topic_of	_instance_hypernym	_synset_domain_topic_of
-0.530973451	_has_part	_has_part	_instance_hypernym_v
-0.318605594	_derivationally_related_form	_derivationally_related_form	_verb_group_v
-0.382854359	_derivationally_related_form	_verb_group_v	_derivationally_related_form

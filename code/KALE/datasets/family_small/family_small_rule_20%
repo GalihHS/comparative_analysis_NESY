@@ -1,0 +1,8 @@
+husband(x,y)&&mother(y,z)==>father(x,z)
+wife(x,y)&&father(y,z)==>mother(x,z)
+wife(x,y)&&son(z,y)==>mother(x,z)
+sister(x,y)&&son(y,z)==>daughter(x,z)
+sister(x,y)&&daughter(y,z)==>daughter(x,z)
+sister(x,y)&&sister(y,z)==>sister(x,z)
+sister(x,y)&&brother(y,z)==>sister(x,z)
+sister(x,y)&&brother(z,y)==>sister(x,z)

@@ -1,0 +1,8 @@
+also_see(X,Y) :- also_see(Y,X).
+synset_domain_topic_of(X,Z) :- derivationally_related_form(X,Y), synset_domain_topic_of(Y,Z).
+synset_domain_topic_of(X,Z) :- hypernym(X,Y), synset_domain_topic_of(Y,Z).
+synset_domain_topic_of(X,Z) :- hypernym(Y,X), synset_domain_topic_of(Y,Z).
+synset_domain_topic_of(X,Z) :- instance_hypernym(X,Y), synset_domain_topic_of(Y,Z).
+has_part(X,Z) :- has_part(X,Y), instance_hypernym(Z,Y).
+derivationally_related_form(X,Z) :- derivationally_related_form(X,Y), verb_group(Z,Y).
+derivationally_related_form(X,Z) :- verb_group(Y,X), derivationally_related_form(Y,Z).
